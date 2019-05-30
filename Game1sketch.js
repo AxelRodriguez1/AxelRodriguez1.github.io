@@ -55,7 +55,7 @@ function mousePressed() {
 
 function draw() {
   //ends game and erases the target array
-  if ((millis() / 1000) > 10) {
+  if ((millis() / 1000) > 20) {
 
     background("black");
     fill("white");
@@ -72,7 +72,7 @@ function draw() {
 
   //timer
   fill("white")
-  text(10-(round(millis() / 1000)), 0 + 50, 10, 40, 20)
+  text(20-(round(millis() / 1000)), 0 + 50, 10, 40, 20)
 
 
   //score
