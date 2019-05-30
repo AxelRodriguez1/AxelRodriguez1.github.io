@@ -55,7 +55,7 @@ function mousePressed() {
 
 function draw() {
   //ends game and erases the target array
-  if ((millis() / 1000) > 20) {
+  if ((millis() / 1000) > 10) {
 
     background("black");
     fill("white");
@@ -72,7 +72,7 @@ function draw() {
 
   //timer
   fill("white")
-  text(20-(round(millis() / 1000)), 0 + 50, 10, 40, 20)
+  text(10-(round(millis() / 1000)), 0 + 50, 10, 40, 20)
 
 
   //score
@@ -102,6 +102,3 @@ function draw() {
 
 }
   
-  //1. The goal for my project was to make a interactive target shooting game with sound. Your mouse is an aimer, and targets randomly move around the screen, you only have 10 seconds to eliminate as many targets as you can.
-
-//2. I accomplished many things but to mention a few, I learned how to create multiple sprites using a character class so the sprites all act similar. I also was able to store the "characters" in an array. 
